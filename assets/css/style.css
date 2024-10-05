@@ -4,7 +4,6 @@ body {
     padding: 0;
 }
 
-/* Navbar Styling */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -31,7 +30,27 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Section Styling */
+.language-switch {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.language-switch button {
+    background-color: white;
+    color: #0366d6;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.language-switch button:hover {
+    background-color: #024c9c;
+    color: white;
+}
+
 section {
     max-width: 800px;
     margin: 50px auto;
@@ -48,8 +67,8 @@ p {
 }
 
 .profile-image {
-    text-align: center;
-    margin: 20px 0;
+    float: left;
+    margin-right: 20px;
 }
 
 .profile-image img {
@@ -59,13 +78,11 @@ p {
     object-fit: cover;
 }
 
-/* Skills Section */
 .skills-icons img {
     width: 50px;
     margin-right: 15px;
 }
 
-/* Project Cards */
 .project-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
@@ -91,7 +108,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Contact Section */
-#contact {
-    text-align: center;
+#contact img {
+    width: 30px;
+    margin-right: 10px;
 }
