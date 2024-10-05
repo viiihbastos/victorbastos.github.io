@@ -1,19 +1,44 @@
-.language-switch {
-    margin-bottom: 20px;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-button {
+header {
     background-color: #0366d6;
-    color: white;
-    border: none;
     padding: 10px 20px;
+    color: white;
+    text-align: right; /* Alinha o conteúdo à direita */
+}
+
+.language-switch button {
+    background-color: white;
+    color: #0366d6;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-left: 10px;
     cursor: pointer;
-    margin-right: 10px;
     border-radius: 5px;
     font-size: 16px;
 }
 
-button:hover {
+.language-switch button:hover {
     background-color: #024c9c;
+    color: white;
+}
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
 }
