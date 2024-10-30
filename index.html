@@ -20,24 +20,16 @@
         </div>
     </nav>
 
-    <header>
-        <div class="profile-image">
-            <img src="assets/images/profile.jpeg" alt="Foto de Victor Bastos">
-        </div>
-        <div class="profile-details">
-            <h1>Victor Bastos</h1>
-            <p>Especialista em Dados | Data Engineering | SQL | Python | Databricks</p>
-        </div>
-    </header>
-
     <section id="about">
         <div class="about-content">
             <div class="profile-image">
                 <img src="assets/images/profile.jpeg" alt="Foto de Victor Bastos">
             </div>
             <div>
-                <h2>Sobre Mim</h2>
-                <p>Sou um especialista em dados com mais de três anos de experiência em engenharia e automação de dados. Atualmente, estou focado em construir pipelines de dados eficientes e soluções de big data.</p>
+                <h2 id="about-title">Sobre Mim</h2>
+                <p id="about-description">
+                    Sou um especialista em dados com mais de três anos de experiência em engenharia e automação de dados. Atualmente, estou focado em construir pipelines de dados eficientes e soluções de big data.
+                </p>
             </div>
         </div>
     </section>
@@ -84,7 +76,16 @@
 
     <script>
         function switchLanguage(language) {
-            // Esta função alternará entre as seções em português e inglês
+            const aboutTitle = document.getElementById('about-title');
+            const aboutDescription = document.getElementById('about-description');
+
+            if (language === 'en') {
+                aboutTitle.textContent = 'About Me';
+                aboutDescription.textContent = 'I am a data specialist with over three years of experience in data engineering and automation. Currently, I am focused on building efficient data pipelines and big data solutions.';
+            } else {
+                aboutTitle.textContent = 'Sobre Mim';
+                aboutDescription.textContent = 'Sou um especialista em dados com mais de três anos de experiência em engenharia e automação de dados. Atualmente, estou focado em construir pipelines de dados eficientes e soluções de big data.';
+            }
         }
     </script>
 </body>
