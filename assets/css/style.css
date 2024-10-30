@@ -62,24 +62,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Header e Imagem de Perfil */
-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-.profile-image {
-    margin-right: 20px;
-}
-
-.profile-image img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
 /* Seção Sobre com Imagem Inline */
 .about-content {
     display: flex;
@@ -146,13 +128,9 @@ a:hover {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    header {
+    .about-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .profile-image {
-        margin: 0 0 20px 0;
     }
 
     nav ul {
