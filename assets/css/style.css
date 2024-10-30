@@ -80,6 +80,24 @@ header {
     object-fit: cover;
 }
 
+/* Seção Sobre com Imagem Inline */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajusta o espaço entre a imagem e o texto */
+}
+
+.about-content .profile-image {
+    margin: 0; /* Remove qualquer margem extra que esteja desalinhando a imagem */
+}
+
+.about-content .profile-image img {
+    width: 100px; /* Ajuste o tamanho da imagem para ficar proporcional ao texto */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* Seções */
 section {
     max-width: 800px;
